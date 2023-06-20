@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
+import Hero from '../components/hero'
 
 export default function Index({ preview, allPosts }) {
   const heroPost = allPosts[0]
@@ -14,10 +15,10 @@ export default function Index({ preview, allPosts }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
+          <title>{`Sanan Maarouf`}</title>
         </Head>
+        <Hero></Hero>
         <Container>
-          <Intro />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
