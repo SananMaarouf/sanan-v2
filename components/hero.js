@@ -1,13 +1,6 @@
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 
 export default function Hero() {
-    const router = useRouter();
-
-    const imageLoader = ({ src, width, quality }) => {
-        return `/${src}?w=${width}&q=${quality || 75}`
-    }
-
     return (
         <section className="bg-white dark:bg-gray-900">
             <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -16,7 +9,7 @@ export default function Hero() {
                     <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Welcome to my portfolio page.</p>
                 </div>
                 <div className="lg:block lg:col-span-5 lg:w-30">
-                    <Image loader={imageLoader} src="/images/crabs.jpg" alt="Sanan" width={500} height={500} className="rounded-full" />
+                    <img src="/images/crabs.jpg" width="500" height="500" />
                 </div>
             </div>
         </section>
