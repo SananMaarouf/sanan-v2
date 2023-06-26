@@ -1,17 +1,18 @@
 import Image from 'next/image';
 
-export default function Hero() {
+function Hero(props) {
     return (
-        <section className="bg-white dark:bg-gray-900">
-            <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-                <div className="mr-auto place-self-center lg:col-span-7">
-                    <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Hello, I am Sanan</h1>
-                    <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Welcome to my portfolio page.</p>
-                </div>
-                <div className="lg:block lg:col-span-5 lg:w-30">
-                    <img src="/images/crabs.jpg" width="500" height="500" />
+        <div className="hero min-h-screen bg-base-200">
+            <div className="flex-col text-center sm:text-left lg:flex-row-reverse">
+                <img src={props.image} className="max-w-sm rounded-lg shadow-2xl mx-auto"/>
+                <div>
+                    <h1 className="text-5xl font-bold">{props.title}</h1>
+                    <p className="py-6">{props.description}</p>
+                    <button className="btn btn-primary flex mx-auto">{props.buttonText}</button>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
+
+export default Hero;

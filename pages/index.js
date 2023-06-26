@@ -7,9 +7,10 @@ import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Hero from '../components/hero'
-
-
-
+import LandingHero from '../components/landing_hero'
+import AboutHero from '../components/about_hero'
+import ContactHero from '../components/contact_hero'
+import ProjectsHero from '../components/projects_hero'
 export default function Index({ preview, allPosts }) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
@@ -19,7 +20,10 @@ export default function Index({ preview, allPosts }) {
         <Head>
           <title>{`Sanan Maarouf`}</title>
         </Head>
-        <Hero></Hero>
+        <LandingHero />
+        <AboutHero />
+        <ContactHero />
+        <ProjectsHero />
         <Container>
           {heroPost && (
             <HeroPost
