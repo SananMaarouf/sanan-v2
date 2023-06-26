@@ -48,3 +48,4 @@ export async function getStaticProps({ preview = false }) {
     props: { preview, allPosts },
   }
 }
+
