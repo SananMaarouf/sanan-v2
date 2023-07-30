@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+/* Hero constructor */
+
 function Hero(props) {
     return (
         <div className="hero min-h-screen bg-base-200">

@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 export default function Navbar() {
     return (
-        <nav class="bg-white">
-            <div className="navbar bg-neutral text-neutral-content">
+        <nav>
+            <div className="navbar bg-neutral text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -28,7 +28,8 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Github</a>
+                    <a href="https://github.com/SananMaarouf" className="btn text-white" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sanan-maarouf/" className="btn text-white ml-1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </nav>
