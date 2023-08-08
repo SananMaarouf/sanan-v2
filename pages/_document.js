@@ -3,7 +3,11 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+          {/* Reference the locally added font files */}
+          <link rel="stylesheet" href="/assets/Roboto/Roboto-Bold.ttf" />
+          {/* Add other meta tags, title, etc., as needed */}
+        </Head>
       <body>
         <Main />
         <NextScript />

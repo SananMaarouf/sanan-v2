@@ -5,6 +5,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    extend: {
+      backgroundImage:{
+        'blob': 'url("/images/creative-up.png")',
+      }
+    },
   },
   plugins: [
     require("daisyui"),

@@ -7,7 +7,7 @@ export default function Layout({ preview, children }) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-blob bg-no-repeat">
         <Navbar></Navbar>
         <main>{children}</main>
       </div>
