@@ -7,11 +7,11 @@ export default function Layout({ preview, children }) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen bg-blob bg-no-repeat">
+      <div className="min-h-screen bg-blob bg-cover bg-no-repeat">
         <Navbar></Navbar>
         <main>{children}</main>
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }

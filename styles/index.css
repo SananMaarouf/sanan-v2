@@ -1,5 +1,21 @@
+/* global style sheet that will affect the whole application */
+
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+  
+/* body font - roboto */
+/* @layer base {
+  @font-face {
+    font-family: 'roboto';
+    src: url(/public/assets/fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Lexend Zetta';
+    src: url(/public/assets/fonts/LexendZetta-Regular.ttf) format('truetype');
+    font-weight: 400;
+  }
+} */

@@ -37,6 +37,8 @@ export default function Meta() {
         content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+
+      <style>@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Poppins:ital@0;1&family=Syne&display=swap');</style>
     </Head>
   )
 }

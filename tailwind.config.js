@@ -7,8 +7,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'blob': 'url("/images/creative-up.png")',
-      }
+        'blob': 'url("/images/dos.svg")',
+      },
+      fontFamily: {
+        syne: "'Syne', sans-serif",
+        habibi: "'Habibi', serif",
+        poppins: "'Poppins', sans-serif",
+      },    
     },
   },
   plugins: [
