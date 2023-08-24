@@ -29,7 +29,6 @@ export default function Index({ preview }) {
         </Head>
         <LandingHero />
         <AboutHero />
-        <LanguagesHero />
         <ProjectsHero />
         <ContactHero />
       </Layout>
