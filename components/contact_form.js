@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
+// TODO: wrap the form in a container and have it be two columns.
+// Left column is name and email, right column is the text field.
+// The send button is centered at the bottom 
 function ContactForm() {
     const [state, handleSubmit] = useForm('mqkvqyvz');
     return (
