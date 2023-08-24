@@ -9,6 +9,11 @@ module.exports = {
       backgroundImage:{
         'blob': 'url("/images/dos.svg")',
       },
+      colors: {
+        'morke-lilla': '#15213E',
+        'lilla': '#673469',
+        'oransje': '#FB7339'
+      },
       fontFamily: {
         syne: "'Syne', sans-serif",
         habibi: "'Habibi', serif",
