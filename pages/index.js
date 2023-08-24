@@ -18,6 +18,7 @@ import LandingHero from '../components/landing_hero'
 import AboutHero from '../components/about_hero'
 import ContactHero from '../components/contact_hero'
 import ProjectsHero from '../components/projects_hero'
+import LanguagesHero from '../components/languages_hero'
 
 export default function Index({ preview }) {
   return (
@@ -28,6 +29,7 @@ export default function Index({ preview }) {
         </Head>
         <LandingHero />
         <AboutHero />
+        <LanguagesHero />
         <ProjectsHero />
         <ContactHero />
       </Layout>

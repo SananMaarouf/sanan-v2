@@ -1,9 +1,4 @@
-import Container from './container';
-import Image from 'next/image';
-import Typewriter from 'typewriter-effect';
-
 export default function AboutHero() {
-
     return (
         // Hero Section that takes up the entire viewport height
         <div className="min-h-screen flex">
