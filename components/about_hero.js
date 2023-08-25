@@ -1,7 +1,7 @@
 export default function AboutHero() {
     return (
         // Hero Section that takes up the entire viewport height
-        <div className="min-h-screen flex">
+        <div id="about" className="min-h-screen flex">
             {/* so i gotta style this */}
             <div className="container mx-5 py-20 lg:mx-auto">
                 {/* stuff in the container goes in here */}

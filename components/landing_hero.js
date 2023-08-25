@@ -6,7 +6,7 @@ export default function LandingHero() {
 
     return (
         // Hero Section that takes up the entire viewport height
-        <div className="min-h-screen flex">
+        <div id='home' className="min-h-screen flex">
             {/* so i gotta style this */}
             <div className="container py-20 mx-5 lg:mx-auto">
                 {/* stuff in the container goes in here */}

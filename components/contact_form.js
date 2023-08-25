@@ -1,57 +1,64 @@
-import { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
-// TODO: wrap the form in a container and have it be two columns.
-// Left column is name and email, right column is the text field.
-// The send button is centered at the bottom 
 function ContactForm() {
     const [state, handleSubmit] = useForm('mqkvqyvz');
     return (
-        <form onSubmit={handleSubmit}>
-            <h2 htmlFor="name" className="block font-2xl text-white">
-                Name
-            </h2>
-            <input
-                id="name"
-                type="text"
-                name="name"
-                className="mt-1 block w-full rounded-md bg-white border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-            />
-            <ValidationError
-                prefix="Name"
-                field="name"
-                errors={state.errors}
-            />
+        <form className='form-control' onSubmit={handleSubmit}>
+            <div className='flex flex-col lg:flex-row'>
+                <div className='flex flex-col justify-around'>
+                    <section>
+                        <label htmlFor="name" className="label">
+                            <span className='label-text text-2xl text-white'>Name</span>
+                        </label>
+                        <input
+                            id="name"
+                            type="text"
+                            name="name"
+                            className="input-md mt-1 block w-full rounded-md bg-white border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        />
+                        <ValidationError
+                            prefix="Name"
+                            field="name"
+                            errors={state.errors}
+                        />
+                    </section>
 
-            <label htmlFor="email" className="block font-2xl text-white">
-                Email Address
-            </label>
-            <input
-                id="email"
-                type="email"
-                name="email"
-                className="mt-1 block w-full rounded-md bg-white border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-            />
-            <ValidationError
-                prefix="Email"
-                field="email"
-                errors={state.errors}
-            />
-
-            <label htmlFor="message" className="block font-2xl text-white">
-                Message
-            </label>
-            <textarea
-                id="message"
-                name="message"
-                className="mt-1 block w-full rounded-md bg-white border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-            />
-            <ValidationError
-                prefix="Message"
-                field="message"
-                errors={state.errors}
-            />
-            <button type="submit" disabled={state.submitting} className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <section>
+                        <label htmlFor="email" className="label">
+                            <span className='label-text text-2xl text-white'>Email address</span>
+                        </label>
+                        <input
+                            id="email"
+                            type="email"
+                            name="email"
+                            className="input-md mt-1 block w-full rounded-md bg-white border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        />
+                        <ValidationError
+                            prefix="Email"
+                            field="email"
+                            errors={state.errors}
+                        />
+                    </section>
+                </div>
+                <section>
+                    <div className='lg:ml-5 h-3/4'>
+                        <label htmlFor="message" className="label">
+                            <span className='label-text text-2xl text-white'>Message</span>
+                        </label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            className="mt-1 textarea textarea-lg block w-full h-full rounded-md bg-white border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        />
+                        <ValidationError
+                            prefix="Message"
+                            field="message"
+                            errors={state.errors}
+                        />
+                    </div>
+                </section>
+            </div>
+            <button type="submit" disabled={state.submitting} className="btn btn-lg flex items-center mt-5 mx-40 border border-transparent text-base font-2xl rounded-md text-white bg-oransje hover:bg-lilla focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Send
             </button>
         </form>

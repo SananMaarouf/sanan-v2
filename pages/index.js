@@ -30,7 +30,6 @@ export default function Index({ preview }) {
         <LandingHero />
         <AboutHero />
         <ProjectsHero />
-        <ContactHero />
       </Layout>
     </>
   )

@@ -10,6 +10,7 @@ module.exports = {
         'blob': 'url("/images/dos.svg")',
       },
       colors: {
+        'mork': '#001220',
         'morke-lilla': '#15213E',
         'lilla': '#673469',
         'oransje': '#FB7339'
