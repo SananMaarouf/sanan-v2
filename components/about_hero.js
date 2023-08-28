@@ -9,11 +9,10 @@ export default function AboutHero() {
                     <p class="text-4xl font-bold text-white text-center">About me</p>
                     <div class="mt-4 md:flex flex-row">
                         <div className='text-white text-2xl my-auto '>
-                            <p class="mt-2">I am a 26 year old developer based in <span class="underline decoration-2">Oslo, Norway</span></p>
+                            <p class="mt-2">I am a 26 year old full stack developer based in <span class="underline decoration-2">Oslo, Norway</span></p>
                             <p class="mt-2">
-                                I've been interested in computers and technology for as long as I can remember. 
-                                I really enjoy learning new things all the time and using that knowledge to make amazing solutions
-                                that improves the lives of regular people.
+                                I've been interested in computers for as long as I can remember. 
+                                I really enjoy learning new technologies and use them to create practical solutions.
                             </p>
                         </div>
                         <div class="flex self-center rounded-3xl">

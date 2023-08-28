@@ -9,7 +9,7 @@ export default function ProjectCard({ image, description, link }) {
         <h1 className="font-bold text-xl mb-2">{description}</h1>
       </div>
       <div className="mx-auto flex justify-center py-4">
-        <Link className="btn btn-primary bg-lilla text-white font-bold py-2 px-4 rounded" href={link}>
+        <Link className="btn btn-primary bg-oransje text-white font-bold py-2 px-4 rounded hover:bg-lilla" href={link}>
             Learn More
         </Link>
       </div>
