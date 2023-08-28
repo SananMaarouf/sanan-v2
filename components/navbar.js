@@ -4,7 +4,7 @@
 import Link from 'next/link'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
     return (
@@ -31,8 +31,9 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a href="https://www.linkedin.com/in/sanan-maarouf/" className='btn btn-ghost bg-white hover:bg-white' target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{color: '#0072b1', fontSize: '3rem'}}/></a>
-                    <a href="https://github.com/SananMaarouf" className='ml-1 mr-5 btn btn-ghost bg-white hover:bg-white' target="_blank"><FontAwesomeIcon icon={faGithub} style={{color: 'black', fontSize: '3rem'}}/></a>                </div>
+                    <a href="/files/CV-Sanan.pdf" download className='btn btn-ghost bg-white  text-black hover:bg-white'>Resume
+                        <FontAwesomeIcon icon={faDownload} style={{color: 'black', fontSize: '2rem'}}/>
+                    </a>                </div>
             </div>
         </nav>
 

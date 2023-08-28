@@ -26,7 +26,7 @@ export default function Greentalk({ preview }) {
                         </div>  
                     </div>
                 </div>
-                <div className="min-h-screen flex">
+                <div className="flex">
                     <div className="container py-20 mx-5 lg:mx-auto">
                         {/* stuff in the container goes in here */}
                         <div class="flex flex-col p-5 justify-evenly bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 borde border-gray-100 my-5 md:flex-row content-center hover:backdrop-blur-lg">
@@ -50,9 +50,6 @@ export default function Greentalk({ preview }) {
                                     </ul>
                                 </p>
                                 
-                                <p className="mt-2 font-poppins text-lg text-white">
-                                    If you are interested, check out the source code on <a className="btn bg-oransje text-white hover:bg-white hover:text-black" target="_blank" href="https://github.com/SananMaarouf/Greentalk">Github</a>
-                                </p>
                             </div>
                         </div> 
                     </div>
