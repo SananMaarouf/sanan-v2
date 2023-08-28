@@ -31,7 +31,7 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a href="/files/CV-Sanan.pdf" download className='btn btn-ghost bg-white  text-black hover:bg-white'>Resume
+                    <a href="/files/CV-Sanan.pdf" download className='btn btn-ghost mr-2 lg:mr-5 bg-white  text-black hover:bg-white'>Resume
                         <FontAwesomeIcon icon={faDownload} style={{color: 'black', fontSize: '2rem'}}/>
                     </a>                </div>
             </div>
