@@ -12,7 +12,7 @@ export default function Layout({ preview, children }) {
       <Meta />
       <div className="min-h-screen bg-blob bg-cover bg-no-repeat">
         <Navbar></Navbar>
-        <main className='scroll-smooth'>{children}</main>
+        <main className='scroll-smooth overflow-x-clip'>{children}</main>
         <Footer />
       </div>
     </>

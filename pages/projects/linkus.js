@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
-
+import { motion } from "framer-motion";
 export default function Linkus({ preview }) {
     return (
         <>
@@ -10,18 +10,20 @@ export default function Linkus({ preview }) {
                 </Head>
                 <div className="min-h-screen flex">
                     {/* so i gotta style this */}
-                    <div className="container py-20 mx-5 lg:mx-auto">
-                        {/* stuff in the container goes in here */}
-                        <div class="flex flex-col p-5 justify-evenly bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 borde border-gray-100 my-5 md:flex-row content-center hover:backdrop-blur-lg">
-                            <div class="mt-4 text-center lg:place-self-center">
-                            <h1 class="block mt-1 text-4xl font-poppins text-white">LinkUs</h1>
-                            <h2 class="mt-2 font-poppins text-3xl text-white">A solution for easily sharing business cards in the new and fast growing digital world </h2>
+                    <div className="container py-20 mx-5 md:py-32 lg:mx-auto">
+                        <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 }}}>
+                            {/* stuff in the container goes in here */}
+                            <div class="flex flex-col p-5 justify-evenly bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 my-5 md:flex-row content-center hover:backdrop-blur-lg">
+                                <div class="mt-4 text-center lg:place-self-center">
+                                <h1 class="block mt-1 text-4xl font-poppins text-white">LinkUs</h1>
+                                <h2 class="mt-2 font-poppins text-3xl text-white">A solution for easily sharing business cards in the new and fast growing digital world </h2>
+                                </div>
+                                <div class="flex self-center">
+                                    <img class="rounded-lg" src="/images/linkus-horisontal.png" />
+                                </div>
                             </div>
-                            <div class="flex self-center">
-                                <img class="rounded-lg" src="/images/linkus-horisontal.png" />
-                            </div>
-                        </div>
-                        <div class="mt-10 flex flex-col items-center md:mt-20">
+                        </motion.div>
+                        <div class="mt-1 flex flex-col items-center md:mt-20">
                             <div class="scroll"></div>
                         </div>  
                     </div>
@@ -84,7 +86,7 @@ export default function Linkus({ preview }) {
                                     Back end:
                                 </p>
                                 <p className="font-poppins text-lg text-white">
-                                    We used Firebase as our backend for our realtime database, authenthication and more.
+                                    We used Firebase on our backend for our realtime database, authenthication and more.
                                 </p>
                             </div>
                         </div> 
