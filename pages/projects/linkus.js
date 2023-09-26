@@ -1,6 +1,8 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function Linkus({ preview }) {
     return (
         <>
@@ -23,9 +25,12 @@ export default function Linkus({ preview }) {
                                 </div>
                             </div>
                         </motion.div>
-                        <div class="mt-1 flex flex-col items-center md:mt-20">
-                            <div class="scroll"></div>
-                        </div>  
+                        <div class="mt-10 flex flex-col items-center md:mt-20">
+                        {/* bouncing fontawesome icon using motion.div */}
+                        <motion.div animate={{ y: [-10, 0, -10] }} transition={{ duration: 1, repeat: Infinity }}>
+                            <FontAwesomeIcon icon={faAnglesDown} style={{color: "white", cursor: "pointer"}} size="4x" onClick={() => window.scrollTo({ top: 500, behavior: 'smooth' })} />                        
+                        </motion.div>
+                    </div>  
                     </div>
                 </div>
                 <div className="flex">

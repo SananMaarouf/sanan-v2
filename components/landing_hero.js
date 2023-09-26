@@ -1,12 +1,13 @@
 import { motion } from "framer-motion"
-
+import { faAnglesDown } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function LandingHero() {
 
     return (
         // Hero Section that takes up the entire viewport height
             <div id='home' className="min-h-screen flex">
                 {/* so i gotta style this */}
-                <div className="container py-20 mx-5 md:mx-auto">
+                <div className="container mx-5 md:mx-auto md:py-10 lg:py-20">
                     <motion.div whileHover={{ scale: 1.05, transition: { duration: 0.2 }}}>
                     {/* stuff in the container goes in here */}
                     <div class="flex flex-col p-5 justify-evenly bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 my-5 md:flex-row content-center hover:backdrop-blur-lg">
@@ -21,8 +22,11 @@ export default function LandingHero() {
                     </div>
                     </motion.div>
                     <div class="mt-10 flex flex-col items-center md:mt-20">
-                        <div class="scroll"></div>
-                    </div>  
+                        {/* bouncing fontawesome icon using motion.div */}
+                        <motion.div animate={{ y: [-10, 0, -10] }} transition={{ duration: 1, repeat: Infinity }}>
+                            <FontAwesomeIcon icon={faAnglesDown} style={{color: "white", cursor: "pointer"}} size="4x" onClick={() => window.scrollTo({ top: 500, behavior: 'smooth' })} />                        
+                        </motion.div>
+                    </div>
                 </div>
             </div>
     )

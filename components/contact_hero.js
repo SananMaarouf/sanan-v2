@@ -15,14 +15,7 @@ export default function AboutHero() {
                             <p class="block mb-1 text-4xl font-bold text-white">Get in touch</p>
                             <ContactForm />
                         </div>
-                        <div class="divider md:divider-horizontal"></div>
-                        <section className='flex flex-col'>
-                            <p class="block mb-1 text-4xl font-bold text-white">Socials</p>
-                            <div class="mt-2 flex flex-col">
-                                <a href="https://www.linkedin.com/in/sanan-maarouf/" target="_blank" class="block mb-1 text-2xl font-bold text-white">Linked<FontAwesomeIcon icon={faLinkedin} size="lg" style={{color: "#0072b1"}}/></a>
-                                <a href="https://github.com/SananMaarouf" target="_blank" class="block text-2xl font-bold text-white">GitHub<FontAwesomeIcon icon={faGithubAlt} size="lg" style={{color: "#f6fff5",}} /></a>
-                            </div>
-                        </section>
+                        
                     </div>
                 </div>
             </div>
