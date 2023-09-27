@@ -21,10 +21,10 @@ export default function LandingHero() {
                         </div>
                     </div>
                     </motion.div>
-                    <div class="mt-10 flex flex-col items-center md:mt-20">
+                    <div class="mt-8 flex flex-col items-center md:mt-20">
                         {/* bouncing fontawesome icon using motion.div */}
                         <motion.div animate={{ y: [-10, 0, -10] }} transition={{ duration: 1, repeat: Infinity }}>
-                            <FontAwesomeIcon icon={faAnglesDown} style={{color: "white", cursor: "pointer"}} size="4x" onClick={() => window.scrollTo({ top: 500, behavior: 'smooth' })} />                        
+                            <FontAwesomeIcon icon={faAnglesDown} style={{color: "white", cursor: "pointer"}} size="3x" onClick={() => window.scrollTo({ top: 500, behavior: 'smooth' })} />                        
                         </motion.div>
                     </div>
                 </div>

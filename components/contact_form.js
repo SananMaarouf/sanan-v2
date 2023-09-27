@@ -58,9 +58,10 @@ function ContactForm() {
                     </div>
                 </section>
             </div>
-            <button type="submit" disabled={state.submitting} className="btn btn-lg flex items-center mt-5 mx-40 border border-transparent text-base font-2xl rounded-md text-white bg-oransje hover:bg-lilla focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            {/* <button type="submit" disabled={state.submitting} className="btn btn-lg flex items-center mt-5 mx-40 border border-transparent text-base font-2xl rounded-md text-white bg-oransje hover:bg-lilla focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Send
-            </button>
+            </button> */}
+            <button type="submit" disabled={state.submitting} className="btn mt-2 bg-oransje hover:bg-lilla text-white lg:mx-48">Send</button>
         </form>
     );
 }
